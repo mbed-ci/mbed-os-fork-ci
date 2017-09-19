@@ -24,6 +24,8 @@
 #include "platform/mbed_error.h"
 #include "platform/mbed_stats.h"
 #include "platform/mbed_critical.h"
+#include "us_ticker_api.h"
+#include "lp_ticker_api.h"
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
@@ -1019,4 +1021,24 @@ void operator delete[](void *ptr)
     if (ptr != NULL) {
         free(ptr);
     }
+}
+
+// temporary - Default to 1MHz at 32 bits if target does not have us_ticker_get_info
+MBED_WEAK const ticker_info_t* us_ticker_get_info()
+{
+    static const ticker_info_t info = {
+        1000000,
+        32
+    };
+    return &info;
+}
+
+// temporary - Default to 1MHz at 32 bits if target does not have lp_ticker_get_info
+MBED_WEAK const ticker_info_t* lp_ticker_get_info()
+{
+    static const ticker_info_t info = {
+        1000000,
+        32
+    };
+    return &info;
 }
