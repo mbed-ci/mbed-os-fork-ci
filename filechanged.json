@@ -1,0 +1,1095 @@
+{
+ "DISCO_L053C8": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_MICROBIT_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "EFM32PG12_STK3402": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARCH_BLE": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "RBLAB_NRF51822": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC1549": [
+  "uARM", 
+  "IAR", 
+  "GCC_ARM"
+ ], 
+ "RZ_A1H": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "OC_MBUINO": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "TY51822R3": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARM_MPS2_M0": [
+  "ARM"
+ ], 
+ "ARM_MPS2_M1": [
+  "ARM"
+ ], 
+ "ARM_MPS2_M3": [
+  "ARM"
+ ], 
+ "ARM_MPS2_M4": [
+  "ARM"
+ ], 
+ "ARM_MPS2_M7": [
+  "ARM"
+ ], 
+ "UBLOX_EVA_NINA": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "K66F": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F302R8": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_DK_LEGACY": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "KW41Z": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F207ZG": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "KL05Z": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_MICROBIT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC4337": [
+  "ARM"
+ ], 
+ "DISCO_F746NG": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F334R8": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F411RE": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "WALLBOT_BLE": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARCH_PRO": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "UBLOX_C030_N211": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_L053R8": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "UBLOX_C030_U201": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_F303VC": [
+  "GCC_ARM"
+ ], 
+ "DISCO_F401VC": [
+  "GCC_ARM"
+ ], 
+ "K20D50M": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_F407VG": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MTM_MTCONNECT04S": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MTM_MTCONNECT04S_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_L031K6": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "KL43Z": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "K22F": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "TY51822R3_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_L432KC": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARCH_GPRS": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51822_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F303ZE": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DELTA_DFCM_NNN50_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "RBLAB_NRF51822_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "KL82Z": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUMAKER_PFM_NANO130": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F401RE": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F303RE": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MOTE_L152RC": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11U24": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_L476VG": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11U34_421": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC1768": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "UBLOX_C027": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51822_Y5_MBUG": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51822": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "VBLUNO51_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F429ZI": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARCH_BLE_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "KW24D": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "TY51822R3_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "SEEED_TINY_BLE": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F091RC": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC1347": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_F334C8": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "RBLAB_NRF51822_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "TEENSY3_1": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC4088_DM": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11U35_Y5_MBUG": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DELTA_DFCM_NNN40_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUMAKER_PFM_NUC472": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_DONGLE_LEGACY": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "RBLAB_BLENANO": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51822_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DELTA_DFBM_NQ620": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "TMPM066": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MAX32630FTHR": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ELMO_F411RE": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "WALLBOT_BLE_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "B96B_F446VE": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "UBLOX_EVK_NINA_B1": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC4330_M0": [
+  "IAR", 
+  "ARM"
+ ], 
+ "RBLAB_BLENANO_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11U24_301": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC4330_M4": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_L486RG": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11C24": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MAX32620HSP": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DELTA_DFCM_NNN40": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_F769NI": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "SEEED_TINY_BLE_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_L073RZ": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "REALTEK_RTL8195AM": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARM_CM3DS_MPS2": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC824": [
+  "uARM", 
+  "IAR", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_L476RG": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "SAMD21J18A": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F746ZG": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "SAML21J18A": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARCH_LINK_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_DK_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_DONGLE": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "SAMG55J19": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "EFM32HG_STK3400": [
+  "uARM", 
+  "IAR", 
+  "GCC_ARM"
+ ], 
+ "VBLUNO52": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "VK_RZ_A1H": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11U68": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11U35_401": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DELTA_DFCM_NNN50_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_F413ZH": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DELTA_DFCM_NNN40_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPCCAPPUCCINO": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MICRONFCBOARD": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F756ZG": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "XADOW_M0": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MCU_LPC4088": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11U37H_401": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_MICROBIT_B_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "XBED_LPC1768": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_L152RE": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F439ZI": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "VBLUNO51": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARCH_MAX": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "KL26Z": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "K82F": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "EFM32LG_STK3600": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC810": [
+  "uARM", 
+  "IAR", 
+  "GCC_ARM"
+ ], 
+ "RO359B": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NZ32_SC151": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DELTA_DFCM_NNN50": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_MICROBIT_B_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F070RB": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC1114": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MAXWSNENV": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F072RB": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MAX32600MBED": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "SEEED_TINY_BLE_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF52840_DK": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "WALLBOT_BLE_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "WIZWIKI_W7500ECO": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "EFM32WG_STK3800": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARCH_LINK_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F446ZE": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "HEXIWEAR": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_F469NI": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_F051R8": [
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F446RE": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARM_MPS2_M0P": [
+  "ARM"
+ ], 
+ "NUCLEO_F410RB": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F042K6": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "USENSE": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F103RB": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "EFM32ZG_STK3200": [
+  "uARM", 
+  "IAR", 
+  "GCC_ARM"
+ ], 
+ "EFM32GG_STK3700": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MTS_MDOT_F411RE": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "KL27Z": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARCH_LINK": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_L072CZ_LRWAN1": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_MICROBIT_B": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F030R8": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "BLUEPILL_F103C8": [
+  "GCC_ARM"
+ ], 
+ "TB_SENSE_1": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "VBLUNO51_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_DK_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ELEKTOR_COCORICO": [
+  "uARM", 
+  "IAR", 
+  "GCC_ARM"
+ ], 
+ "RBLAB_BLENANO_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_F100RB": [
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F303K8": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11U35_501_IBDAP": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "WIZWIKI_W7500P": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "TB_SENSE_12": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "K64F": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARM_BEETLE_SOC": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11U35_501": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "SSCI824": [
+  "uARM", 
+  "GCC_ARM"
+ ], 
+ "EFM32PG_STK3401": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_F429ZI": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARCH_BLE_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC54608": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUMAKER_PFM_M453": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "XDOT_L151CC": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "SARA_NBIOT_EVK": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "HRM1017": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "UBRIDGE": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MTS_DRAGONFLY_F411RE": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC812": [
+  "uARM", 
+  "IAR", 
+  "GCC_ARM"
+ ], 
+ "LPC4088": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF52_DK": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "WIZWIKI_W7500": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "SAMD21G18A": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_DONGLE_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "SAMR21G18A": [
+  "uARM", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MTM_MTCONNECT04S_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F767ZI": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MAX32625NEXPAQ": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_DONGLE_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUMAKER_PFM_M487": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_MICROBIT_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "KL46Z": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC11U37_501": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "LPC54114": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "DISCO_L475VG_IOT01A": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NCS36510": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NRF51_DK": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F412ZG": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "HRM1017_BOOT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "HRM1017_OTA": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "KL25Z": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "NUCLEO_F031K6": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MAX32625MBED": [
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "ARM_IOTSS_BEID": [
+  "ARM"
+ ], 
+ "NUCLEO_L011K4": [
+  "uARM"
+ ], 
+ "MTS_MDOT_F405RG": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "UBLOX_EVK_ODIN_W2": [
+  "uARM", 
+  "IAR", 
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "MTS_GAMBIT": [
+  "ARM", 
+  "GCC_ARM"
+ ], 
+ "VBLUNO51_LEGACY": [
+  "ARM", 
+  "GCC_ARM"
+ ]
+}
