@@ -8,4 +8,4 @@ echo determineRepoName()
 
 def RESULT=currentBuild.currentResult
 
-setGitHubPullRequestStatus context: 'mbed-os-ci-build', message: '${BUILD_URL}', state: '${RESULT}'
+setGitHubPullRequestStatus context: 'mbed-os-ci-build', message: "${BUILD_URL}", state: "${RESULT}"
