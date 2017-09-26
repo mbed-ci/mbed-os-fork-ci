@@ -26,5 +26,6 @@ node ("GCC_ARM") {
     env.GITHUB_PR_URL = GIT_REPO_URL.replaceAll('.git', "/pull/${CHANGE_ID}")
     env.GITHUB_PR_HEAD_SHA = commitHash
     env.GITHUB_PR_NUMBER = CHANGE_ID
+    currentBuild.result = RESULT
     step([$class: 'GitHubPRCommentPublisher', comment: [content: 'morph test'], statusVerifier: [buildStatus: 'SUCCESS']])
 }
