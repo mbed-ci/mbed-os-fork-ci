@@ -6,19 +6,12 @@ node ("GCC_ARM") {
 }
 */
 
-/*
-String determineRepoName() {
-    return scm.getUserRemoteConfigs()[0].getUrl()
-}
+def GIT_REPO_URL = scm.userRemoteConfigs[0].url
+def CHANGE_ID = env.CHANGE_ID
 
-echo determineRepoName()
-
-*/
-
-
-build 'mbed-os-matrix-2', parameters: [string(name: 'GIT_REPO_URL', value: scm.userRemoteConfigs[0].url), \
+build 'mbed-os-matrix-2', parameters: [string(name: 'GIT_REPO_URL', value: '${GIT_REPO_URL}'), \
                                        string(name: 'GIT_COMMIT', value: ''), \
-                                       string(name: 'CHANGE_ID', value: env.CHANGE_ID)]
+                                       string(name: 'CHANGE_ID', value: '${CHANGE_ID}')]
 
 
 echo currentBuild.currentResult
