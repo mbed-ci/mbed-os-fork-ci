@@ -22,4 +22,6 @@ githubNotify account: 'mbed-ci', context: 'mbed-os-build-matrix', \
     description: '', gitApiUrl: '', repo: 'mbed-os-fork-ci', \
     sha: commitHash, status: RESULT, targetUrl: BUILD_URL
 
-step([$class: 'GitHubPRCommentPublisher', comment: [content: 'morph test'], statusVerifier: [buildStatus: 'SUCCESS']])
+node ("GCC_ARM") {
+    step([$class: 'GitHubPRCommentPublisher', comment: [content: 'morph test'], statusVerifier: [buildStatus: 'SUCCESS']])
+}
