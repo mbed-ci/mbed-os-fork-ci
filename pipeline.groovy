@@ -14,6 +14,6 @@ build job: 'mbed-os-matrix-2', parameters: [string(name: 'GIT_REPO_URL', value: 
                                        string(name: 'CHANGE_ID', value: "${CHANGE_ID}")]
 
 
-echo currentBuild.currentResult
+def RESULT = currentBuild.currentResult
 
-//setGitHubPullRequestStatus context: 'mbed-os-ci-build', message: "${BUILD_URL}", state: "${RESULT}"
+setGitHubPullRequestStatus context: 'mbed-os-ci-build', message: "${env.BUILD_URL}", state: "${RESULT}"
