@@ -21,3 +21,5 @@ githubNotify account: 'mbed-ci', context: 'mbed-os-build-matrix', \
     credentialsId: 'fa358ad8-b972-49f8-ad26-3701524fedd8', \
     description: '', gitApiUrl: '', repo: 'mbed-os-fork-ci', \
     sha: commitHash, status: RESULT, targetUrl: BUILD_URL
+
+step([$class: 'GitHubPRCommentPublisher', comment: [content: 'morph test'], statusVerifier: [buildStatus: 'SUCCESS']])
