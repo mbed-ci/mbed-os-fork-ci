@@ -1,6 +1,7 @@
-def scmVars = checkout scm
-
-def commitHash = scmVars.GIT_COMMIT
+node ("GCC_ARM") {
+    def scmVars = checkout scm
+    def commitHash = scmVars.GIT_COMMIT
+}
 
 /*
 String determineRepoName() {
