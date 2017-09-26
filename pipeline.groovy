@@ -20,6 +20,6 @@ echo determineRepoName()
 //build 'mbed-os-matrix-2'
 
 def RESULT=currentBuild.currentResult
-echo ${RESULT}
+echo $RESULT
 
 //setGitHubPullRequestStatus context: 'mbed-os-ci-build', message: "${BUILD_URL}", state: "${RESULT}"
