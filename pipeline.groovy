@@ -2,15 +2,11 @@ node ("GCC_ARM") {
     def scmVars = checkout scm
     def commitHash = scmVars.GIT_COMMIT
     def gitBranch = scmVars.GIT_BRANCH
-    def changeId = env.CHANGE_ID
 }
 
-def gitUrl = build.environment.get("GIT_URL")
+echo build.environment.get("GIT_URL")
+echo env.CHANGE_ID
 
-echo $gitUrl
-echo $commitHash
-echo $gitBranch
-echo $changeId
 /*
 String determineRepoName() {
     return scm.getUserRemoteConfigs()[0].getUrl()
