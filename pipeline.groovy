@@ -1,10 +1,12 @@
+/*
 node ("GCC_ARM") {
     def scmVars = checkout scm
     def commitHash = scmVars.GIT_COMMIT
     def gitBranch = scmVars.GIT_BRANCH
 }
+*/
 
-echo build.environment.get("GIT_URL")
+echo scm.userRemoteConfigs[0].url
 echo env.CHANGE_ID
 
 /*
