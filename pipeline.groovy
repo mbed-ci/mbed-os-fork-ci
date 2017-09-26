@@ -1,17 +1,20 @@
+def commitHash
+def gitBranch
+
 stage ("Prep") {
     
-    def commitHash
-    def gitBranch
+
 
     node ("GCC_ARM") {
         def scmVars = checkout scm
         commitHash = scmVars.GIT_COMMIT
         gitBranch = scmVars.GIT_BRANCH
     }
-
-    def GIT_REPO_URL = scm.userRemoteConfigs[0].url
-    def CHANGE_ID = env.CHANGE_ID
 }
+
+def GIT_REPO_URL = scm.userRemoteConfigs[0].url
+def CHANGE_ID = env.CHANGE_ID
+
 
 stage ("Build"){
     build job: 'mbed-os-matrix-2', parameters: [string(name: 'GIT_REPO_URL', value: GIT_REPO_URL), \
