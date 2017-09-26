@@ -4,7 +4,7 @@ node ("GCC_ARM") {
     def gitBranch = scmVars.GIT_BRANCH
 }
 
-echo build.environment.get("GIT_URL")
+echo env.GIT_URL
 echo env.CHANGE_ID
 
 /*
