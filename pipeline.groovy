@@ -22,6 +22,9 @@ githubNotify account: 'mbed-ci', context: 'mbed-os-build-matrix', \
     description: '', gitApiUrl: '', repo: 'mbed-os-fork-ci', \
     sha: commitHash, status: RESULT, targetUrl: BUILD_URL
 
+if( currentBuild.currentResult == "SUCCESS") {
+    build job: examples-matrix
+/*
 node ("GCC_ARM") {
     env.GITHUB_PR_URL = GIT_REPO_URL.replaceAll('.git', "/pull/${CHANGE_ID}")
     env.GITHUB_PR_HEAD_SHA = commitHash
@@ -29,3 +32,5 @@ node ("GCC_ARM") {
     currentBuild.result = RESULT
     step([$class: 'GitHubPRCommentPublisher', comment: [content: 'morph test'], statusVerifier: [buildStatus: 'SUCCESS']])
 }
+*/
+
