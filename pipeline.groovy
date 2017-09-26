@@ -23,7 +23,8 @@ githubNotify account: 'mbed-ci', context: 'mbed-os-build-matrix', \
     sha: commitHash, status: RESULT, targetUrl: BUILD_URL
 
 if( currentBuild.currentResult == "SUCCESS") {
-    build job: examples-matrix
+   // build job: examples-matrix
+}
 /*
 node ("GCC_ARM") {
     env.GITHUB_PR_URL = GIT_REPO_URL.replaceAll('.git', "/pull/${CHANGE_ID}")
