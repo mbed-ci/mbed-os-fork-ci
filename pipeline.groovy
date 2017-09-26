@@ -1,7 +1,10 @@
+def commitHash
+def gitBranch
+
 node ("GCC_ARM") {
     def scmVars = checkout scm
-    def commitHash = scmVars.GIT_COMMIT
-    def gitBranch = scmVars.GIT_BRANCH
+    commitHash = scmVars.GIT_COMMIT
+    gitBranch = scmVars.GIT_BRANCH
 }
 
 def GIT_REPO_URL = scm.userRemoteConfigs[0].url
