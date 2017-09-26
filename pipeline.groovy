@@ -4,7 +4,7 @@ node ("GCC_ARM") {
     def gitBranch = scmVars.GIT_BRANCH
 }
 
-echo env.GIT_URL
+echo build.environment.get("GIT_URL")
 echo env.CHANGE_ID
 
 /*
@@ -19,7 +19,6 @@ echo determineRepoName()
 
 //build 'mbed-os-matrix-2'
 
-def RESULT=currentBuild.currentResult
-echo $RESULT
+echo currentBuild.currentResult
 
 //setGitHubPullRequestStatus context: 'mbed-os-ci-build', message: "${BUILD_URL}", state: "${RESULT}"
