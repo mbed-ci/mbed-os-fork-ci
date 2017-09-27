@@ -61,11 +61,9 @@ stage ("Build"){
         sha: GITHUB_PR_HEAD_SHA, status: RESULT, targetUrl: BUILD_URL
 
 }
-*/
 if( currentBuild.currentResult == "SUCCESS") {
    // build job: examples-matrix
 }
-/*
 node ("GCC_ARM") {
     env.GITHUB_PR_URL = GIT_REPO_URL.replaceAll('.git', "/pull/${GITHUB_PR_NUMBER}")
     env.GITHUB_PR_HEAD_SHA = GITHUB_PR_HEAD_SHA
