@@ -38,9 +38,7 @@ stage ("Prep") {
 }
 
 stage ("Build") {
-    timestamps {
-        parallel buildStepsForParallel
-    }
+    parallel buildStepsForParallel
 }
 
 /*
