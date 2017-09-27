@@ -72,7 +72,7 @@ def targets = [
   "NUMAKER_PFM_M453",
   "NUMAKER_PFM_M487",
   "NUMAKER_PFM_NUC472",
-  "REALTEK_RTL8195AM",
+//  "REALTEK_RTL8195AM",
   "RO359B",
   "SARA_NBIOT_EVK",
   "TB_SENSE_1",
@@ -179,9 +179,7 @@ def buildStep(target, toolchain) {
           deleteDir()
           checkout scm
        	  sh ("mbed test --compile -m ${target} -t ${toolchain} -c -v > build_${target}_${toolchain}.log")
-          if(${target} == "ARCH_PRO") {
-            currentBuild.result = FAILURE
-          }
+          archiveArtifacts artifacts: '**/*.log, **/*.bin, **/.hex, **/*.elf, **/test_spec.json', onlyIfSuccessful: true
         }
     }
 }
