@@ -1,6 +1,104 @@
-// Load target and toolchain lists
-//load 'targets.groovy'
-//load 'toolchains.groovy'
+def targets = [
+  "ARCH_PRO",
+  "ARM_BEETLE_SOC",
+  "ARM_CM3DS_MPS2",
+  "B96B_F446VE",
+  "DELTA_DFBM_NQ620",
+  "DISCO_F413ZH",
+  "DISCO_F429ZI",
+  "DISCO_F469NI",
+  "DISCO_F746NG",
+  "DISCO_F769NI",
+  "DISCO_L072CZ_LRWAN1",
+  "DISCO_L475VG_IOT01A",
+  "DISCO_L476VG",
+  "EFM32GG_STK3700",
+  "EFM32LG_STK3600",
+  "EFM32PG_STK3401",
+  "EFM32PG12_STK3402",
+  "EFM32WG_STK3800",
+  "HEXIWEAR",
+  "K22F",
+  "K64F",
+  "K66F",
+  "K82F",
+  "KL25Z",
+  "KL43Z",
+  "KL46Z",
+  "KL82Z",
+  "KW24D",
+  "KW41Z",
+  "LPC1768",
+  "LPC4088",
+  "LPC4088_DM",
+  "LPC54114",
+  "LPC54608",
+  "MAX32600MBED",
+  "MAX32620HSP",
+  "MAX32625MBED",
+  "MAX32625NEXPAQ",
+  "MAX32630FTHR",
+  "MAXWSNENV",
+  "MTS_DRAGONFLY_F411RE",
+  "MTS_MDOT_F411RE",
+  "NCS36510",
+  "NRF51_DK",
+  "NRF51_DONGLE",
+  "NRF52_DK",
+  "NRF52840_DK",
+  "NUCLEO_F070RB",
+  "NUCLEO_F072RB",
+  "NUCLEO_F091RC",
+  "NUCLEO_F103RB",
+  "NUCLEO_F207ZG",
+  "NUCLEO_F303RE",
+  "NUCLEO_F303ZE",
+  "NUCLEO_F401RE",
+  "NUCLEO_F410RB",
+  "NUCLEO_F411RE",
+  "NUCLEO_F412ZG",
+  "NUCLEO_F429ZI",
+  "NUCLEO_F439ZI",
+  "NUCLEO_F446RE",
+  "NUCLEO_F446ZE",
+  "NUCLEO_F746ZG",
+  "NUCLEO_F756ZG",
+  "NUCLEO_F767ZI",
+  "NUCLEO_L073RZ",
+  "NUCLEO_L152RE",
+  "NUCLEO_L432KC",
+  "NUCLEO_L476RG",
+  "NUCLEO_L486RG",
+  "NUMAKER_PFM_M453",
+  "NUMAKER_PFM_M487",
+  "NUMAKER_PFM_NUC472",
+  "REALTEK_RTL8195AM",
+  "RO359B",
+  "SARA_NBIOT_EVK",
+  "TB_SENSE_1",
+  "TB_SENSE_12",
+  "TMPM066",
+  "TY51822R3",
+  "UBLOX_C027",
+  "UBLOX_C030_N211",
+  "UBLOX_C030_U201",
+  "UBLOX_EVA_NINA",
+  "UBLOX_EVK_NINA_B1",
+  "UBLOX_EVK_ODIN_W2",
+  "UBRIDGE",
+  "USENSE",
+  "WIZWIKI_W7500",
+  "WIZWIKI_W7500ECO",
+  "WIZWIKI_W7500P",
+  "XDOT_L151CC"
+]
+
+// Map toolchains to compiler labels on Jenkins
+def toolchains = [
+  "IAR",
+  "ARM",
+  "GCC_ARM"
+  ]
 
 // Build a map of targets and toolchains for build step
 def buildStepsForParallel = [:]
@@ -38,7 +136,9 @@ stage ("Prep") {
 }
 
 stage ("Build") {
-    parallel buildStepsForParallel
+    timestamps {
+        parallel buildStepsForParallel
+    }
 }
 
 /*
