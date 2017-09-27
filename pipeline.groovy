@@ -178,7 +178,8 @@ def buildStep(target, toolchain) {
         node ("${toolchain}") {
           deleteDir()
           checkout scm
-       	  sh ("mbed test --compile -m ${target} -t ${toolchain} -c -v > build_${target}_${toolchain}.log")
+       	  sh ("mbed test --compile -m ${target} -t ${toolchain} -c -v")
+          //sh ("mbed test --compile -m ${target} -t ${toolchain} -c -v > build_${target}_${toolchain}.log")
           archiveArtifacts artifacts: '**/*.log, **/*.bin, **/.hex, **/*.elf, **/test_spec.json', onlyIfSuccessful: true
         }
     }
