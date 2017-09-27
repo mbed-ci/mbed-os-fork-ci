@@ -1,26 +1,48 @@
-def GITHUB_PR_HEAD_SHA
-def gitBranch
+// Load target and toolchain lists
+load 'targets.groovy'
+load 'toolchains.groovy'
+
+// Build a map of targets and toolchains for build step
+def buildStepsForParallel = [:]
+for (target in targets) {
+    for(toolchain in toolchains) {
+        def stepName = "${target} ${toolchain}"
+        echo "Include ${target} ${toolchain}"
+        buildStepsForParallel[stepName] = buildStep(target, toolchain)
+    }
+}
+
 
 stage ("Prep") {
+    def GITHUB_PR_HEAD_SHA
+    def gitBranch
+
     node ("ARM") {
         def scmVars = checkout scm
         GITHUB_PR_HEAD_SHA = scmVars.GIT_COMMIT
         gitBranch = scmVars.GIT_BRANCH
     }
+
+    def GIT_REPO_URL = scm.userRemoteConfigs[0].url
+    def GITHUB_PR_TARGET_BRANCH = env.CHANGE_TARGET
+    def GITHUB_PR_NUMBER = env.CHANGE_ID
+
+    //def GITHUB_PR_URL = GIT_REPO_URL.replaceAll('.git', "/pull/${GITHUB_PR_NUMBER}")
+    def GITHUB_PR_URL = env.CHANGE_URL 
+
+
+    echo env.BRANCH_NAME // PR-3
+    echo env.CHANGE_ID //3
+    echo env.CHANGE_URL // https://github.com/mbed-ci/mbed-os-fork-ci/pull/3
+    echo env.CHANGE_TARGET // master
 }
 
-def GIT_REPO_URL = scm.userRemoteConfigs[0].url
-def GITHUB_PR_TARGET_BRANCH = env.CHANGE_TARGET
-def GITHUB_PR_NUMBER = env.CHANGE_ID
+stage ("Build") {
+    timestamps {
+        parallel buildStepsForParallel
+    }
+}
 
-//def GITHUB_PR_URL = GIT_REPO_URL.replaceAll('.git', "/pull/${GITHUB_PR_NUMBER}")
-def GITHUB_PR_URL = env.CHANGE_URL 
-
-
-echo env.BRANCH_NAME // PR-3
-echo env.CHANGE_ID //3
-echo env.CHANGE_URL // https://github.com/mbed-ci/mbed-os-fork-ci/pull/3
-echo env.CHANGE_TARGET // master
 /*
 stage ("Build"){
     build job: 'mbed-os-matrix-2', \
@@ -52,4 +74,16 @@ node ("GCC_ARM") {
     step([$class: 'GitHubPRCommentPublisher', comment: [content: 'morph test'], statusVerifier: [buildStatus: 'SUCCESS']])
 }
 */
+
+
+//Create build steps for parallel execution
+def buildStep(target, toolchain) {
+    return {
+        node ("${toolchain}") {
+            deleteDir()
+            checkout scm
+       	    sh ("mbed test --compile -m ${target} -t ${toolchain} -c -v > build_${target}_${toolchain}.log")
+        }
+    }
+}
 
