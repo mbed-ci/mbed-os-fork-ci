@@ -1,6 +1,6 @@
 // Load target and toolchain lists
-load 'targets.groovy'
-load 'toolchains.groovy'
+//load 'targets.groovy'
+//load 'toolchains.groovy'
 
 // Build a map of targets and toolchains for build step
 def buildStepsForParallel = [:]
