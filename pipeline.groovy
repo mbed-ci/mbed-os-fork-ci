@@ -7,21 +7,21 @@ def buildStepsForParallel = [:]
 for (target in targets) {
     for(toolchain in toolchains) {
         def stepName = "${target} ${toolchain}"
-        echo "Include ${target} ${toolchain}"
+        //echo "Include ${target} ${toolchain}"
         buildStepsForParallel[stepName] = buildStep(target, toolchain)
     }
 }
 
 
 stage ("Prep") {
-    def GITHUB_PR_HEAD_SHA
-    def gitBranch
+    def scmVars
 
     node ("ARM") {
-        def scmVars = checkout scm
-        GITHUB_PR_HEAD_SHA = scmVars.GIT_COMMIT
-        gitBranch = scmVars.GIT_BRANCH
+        scmVars = checkout scm
     }
+
+    def GITHUB_PR_HEAD_SHA = scmVars.GIT_COMMIT
+    def gitBranch = scmVars.GIT_BRANCH
 
     def GIT_REPO_URL = scm.userRemoteConfigs[0].url
     def GITHUB_PR_TARGET_BRANCH = env.CHANGE_TARGET
@@ -31,10 +31,10 @@ stage ("Prep") {
     def GITHUB_PR_URL = env.CHANGE_URL 
 
 
-    echo env.BRANCH_NAME // PR-3
-    echo env.CHANGE_ID //3
-    echo env.CHANGE_URL // https://github.com/mbed-ci/mbed-os-fork-ci/pull/3
-    echo env.CHANGE_TARGET // master
+//    echo env.BRANCH_NAME // PR-3
+//    echo env.CHANGE_ID //3
+//    echo env.CHANGE_URL // https://github.com/mbed-ci/mbed-os-fork-ci/pull/3
+//    echo env.CHANGE_TARGET // master
 }
 
 stage ("Build") {
