@@ -13,6 +13,10 @@ def GIT_REPO_URL = scm.userRemoteConfigs[0].url
 def GITHUB_PR_NUMBER = env.CHANGE_ID
 def GITHUB_PR_URL = GIT_REPO_URL.replaceAll('.git', "/pull/${GITHUB_PR_NUMBER}")
 
+echo env.BRANCH_NAME
+echo env.CHANGE_ID
+echo env.CHANGE_URL
+echo env.CHANGE_TARGET
 
 stage ("Build"){
     build job: 'mbed-os-matrix-2', parameters: [string(name: 'GIT_REPO_URL', value: GIT_REPO_URL), \
