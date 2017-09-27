@@ -15,7 +15,8 @@ def GITHUB_PR_URL = GIT_REPO_URL.replaceAll('.git', "/pull/${GITHUB_PR_NUMBER}")
 
 
 stage ("Build"){
-    build job: 'mbed-os-matrix-2', parameters: [string(name: 'GITHUB_PR_URL', value: GITHUB_PR_URL), \
+    build job: 'mbed-os-matrix-2', parameters: [string(name: 'GIT_REPO_URL', value: GIT_REPO_URL), \
+                                                string(name: 'GITHUB_PR_URL', value: GITHUB_PR_URL), \
                                                 string(name: 'GITHUB_PR_HEAD_SHA', value: GITHUB_PR_HEAD_SHA), \
                                                 string(name: 'GITHUB_PR_NUMBER', value: GITHUB_PR_NUMBER)]
 
