@@ -2,7 +2,7 @@ def GITHUB_PR_HEAD_SHA
 def gitBranch
 
 stage ("Prep") {
-    node ("GCC_ARM") {
+    node ("ARM-test") {
         def scmVars = checkout scm
         GITHUB_PR_HEAD_SHA = scmVars.GIT_COMMIT
         gitBranch = scmVars.GIT_BRANCH
