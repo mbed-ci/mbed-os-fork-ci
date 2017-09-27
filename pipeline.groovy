@@ -116,7 +116,6 @@ stage ("Prep") {
 
     node ("ARM") {
         scmVars = checkout scm
-        stash includes: '**', name: 'mbed-os-repo'
     }
 
     def GITHUB_PR_HEAD_SHA = scmVars.GIT_COMMIT
@@ -178,8 +177,7 @@ def buildStep(target, toolchain) {
     return {
         node ("${toolchain}") {
           deleteDir()
-          //checkout scm
-          unstash 'mbed-os-repo'
+          checkout scm
        	  sh ("mbed test --compile -m ${target} -t ${toolchain} -c -v > build_${target}_${toolchain}.log")
           archiveArtifacts artifacts: '**/*.log, **/*.bin, **/.hex, **/*.elf, **/test_spec.json', onlyIfSuccessful: true
         }
