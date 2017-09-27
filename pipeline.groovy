@@ -2,7 +2,7 @@ def GITHUB_PR_HEAD_SHA
 def gitBranch
 
 stage ("Prep") {
-    node ("ARM-test") {
+    node ("ARM") {
         def scmVars = checkout scm
         GITHUB_PR_HEAD_SHA = scmVars.GIT_COMMIT
         gitBranch = scmVars.GIT_BRANCH
@@ -21,7 +21,7 @@ echo env.BRANCH_NAME // PR-3
 echo env.CHANGE_ID //3
 echo env.CHANGE_URL // https://github.com/mbed-ci/mbed-os-fork-ci/pull/3
 echo env.CHANGE_TARGET // master
-
+/*
 stage ("Build"){
     build job: 'mbed-os-matrix-2', \
     parameters: [string(name: 'GIT_REPO_URL', value: GIT_REPO_URL), \
@@ -32,14 +32,14 @@ stage ("Build"){
 
 
     def RESULT = currentBuild.currentResult
-/*
+
     githubNotify account: 'mbed-ci', context: 'mbed-os-build-matrix', \
         credentialsId: 'fa358ad8-b972-49f8-ad26-3701524fedd8', \
         description: '', gitApiUrl: '', repo: 'mbed-os-fork-ci', \
         sha: GITHUB_PR_HEAD_SHA, status: RESULT, targetUrl: BUILD_URL
-*/
-}
 
+}
+*/
 if( currentBuild.currentResult == "SUCCESS") {
    // build job: examples-matrix
 }
