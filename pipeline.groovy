@@ -176,9 +176,12 @@ node ("GCC_ARM") {
 def buildStep(target, toolchain) {
     return {
         node ("${toolchain}") {
-            deleteDir()
-            checkout scm
-       	    sh ("mbed test --compile -m ${target} -t ${toolchain} -c -v > build_${target}_${toolchain}.log")
+          deleteDir()
+          checkout scm
+       	  sh ("mbed test --compile -m ${target} -t ${toolchain} -c -v > build_${target}_${toolchain}.log")
+          if(${target} == "ARCH_PRO") {
+            currentBuild.result = FAILURE
+          }
         }
     }
 }
