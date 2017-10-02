@@ -3,7 +3,7 @@
 def targets = [
   //"LPC1768",
   //"NUCLEO_F401RE",
-  //"NRF51822",
+  "NRF51822",
   "K64F"
   ]
 
