@@ -2,7 +2,7 @@
 // List of targets to compile
 def targets = [
   //"LPC1768",
-  //"NUCLEO_F401RE",
+  "NUCLEO_F401RE",
   //"NRF51822",
   "K64F"
   ]
