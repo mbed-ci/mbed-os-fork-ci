@@ -133,3 +133,6 @@ class TimingDriftSync(BaseHostTest):
 
     def teardown(self):
         pass
+
+    def test_function(self):
+        pass
