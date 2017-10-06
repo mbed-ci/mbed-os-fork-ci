@@ -26,7 +26,7 @@ using namespace utest::v1;
 // Echo server (echo payload to host)
 template<int N>
 void test_case_echo_server_x() {
-    char _key[10] = {};
+    char _key[11] = {};
     char _value[128] = {};
     const int echo_count = N;
     const char _key_const[] = "echo_count";
