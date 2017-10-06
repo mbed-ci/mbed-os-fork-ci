@@ -56,13 +56,11 @@ utest::v1::status_t greentea_failure_handler(const Case *const source, const fai
 }
 
 Case cases[] = {
-    Case("Echo server: x16", test_case_echo_server_x<16>, greentea_failure_handler),
-    Case("Echo server: x32", test_case_echo_server_x<32>, greentea_failure_handler),
-    Case("Echo server: x64", test_case_echo_server_x<64>, greentea_failure_handler),
+    Case("Echo server: x16", test_case_echo_server_x<16>, greentea_failure_handler)
 };
 
 utest::v1::status_t greentea_test_setup(const size_t number_of_cases) {
-    GREENTEA_SETUP(180, "echo");
+    GREENTEA_SETUP(60, "echo");
     return greentea_test_setup_handler(number_of_cases);
 }
 
