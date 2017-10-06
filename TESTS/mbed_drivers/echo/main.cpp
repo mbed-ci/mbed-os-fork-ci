@@ -26,7 +26,7 @@ using namespace utest::v1;
 // Echo server (echo payload to host)
 template<int N>
 void test_case_echo_server_x() {
-    char _key[12] = {};
+    char _key[10] = {};
     char _value[128] = {};
     const int echo_count = N;
     const char _key_const[] = "echo_count";
@@ -37,13 +37,9 @@ void test_case_echo_server_x() {
         greentea_send_kv(_key_const, echo_count);
         greentea_parse_kv(_key, _value, sizeof(_key), sizeof(_value));
         expected_key = strcmp(_key_const, _key);
-        printf("TX string %s and %d \r\n",_key,expected_key);
     } while (expected_key);
 
     TEST_ASSERT_EQUAL_INT(echo_count, atoi(_value));
-
-    printf("getting first packet from host ......\r\n");
-    greentea_send_kv("get_uuid",1);
     for (int i=0; i < echo_count; ++i) {
         greentea_parse_kv(_key, _value, sizeof(_key), sizeof(_value));
         greentea_send_kv(_key, _value);
