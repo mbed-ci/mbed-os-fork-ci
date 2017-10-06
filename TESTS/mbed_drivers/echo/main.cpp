@@ -32,9 +32,9 @@ void test_case_echo_server_x() {
     const char _key_const[] = "echo_count";
     int expected_key = 1;
 
+    greentea_send_kv(_key_const, echo_count);
     // Handshake with host
     do {
-        greentea_send_kv(_key_const, echo_count);
         greentea_parse_kv(_key, _value, sizeof(_key), sizeof(_value));
         expected_key = strcmp(_key_const, _key);
     } while (expected_key);
