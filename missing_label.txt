@@ -1,0 +1,1 @@
+Test to check missing label, Build not get triggered automatically.
