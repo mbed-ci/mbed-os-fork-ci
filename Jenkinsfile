@@ -32,4 +32,3 @@ def testApps = [
 mbed.buildTestApps(testApps, "${currentBranch}")
 
 //change 1
-//change 2
