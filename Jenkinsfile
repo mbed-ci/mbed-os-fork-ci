@@ -2,6 +2,7 @@
 // List of targets to compile
 def targets = [
   "LPC1768",
+  "K64F"
   ]
 
 // Map toolchains to compiler labels on Jenkins
